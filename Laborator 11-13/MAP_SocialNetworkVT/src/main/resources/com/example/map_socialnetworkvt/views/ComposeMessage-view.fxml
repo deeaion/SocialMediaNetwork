@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="416.0" prefWidth="712.0" style="-fx-background-color: #e3bcbc;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.map_socialnetworkvt.Controller.ComposeMessageController">
+   <children>
+      <ImageView blendMode="SOFT_LIGHT" fitHeight="408.0" fitWidth="712.0" layoutY="48.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/backgroundImages/image0.jpg" />
+         </image>
+      </ImageView>
+      <HBox alignment="CENTER_LEFT" layoutY="-4.0" prefHeight="71.0" prefWidth="712.0" style="-fx-background-color: #D8A7B1;">
+         <children>
+            <TextArea fx:id="txtRecievers" prefHeight="71.0" prefWidth="573.0" promptText="Enter reciever/ recievers. Separate them with a comma.">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </TextArea>
+         </children>
+      </HBox>
+      <TextArea fx:id="txtMessage" layoutY="80.0" prefHeight="322.0" prefWidth="518.0" promptText="Send text" />
+      <Button fx:id="btnSend" defaultButton="true" layoutX="537.0" layoutY="197.0" mnemonicParsing="false" onAction="#handleSend" prefHeight="87.0" prefWidth="87.0" style="-fx-background-color: #EF7C8E;">
+         <graphic>
+            <ImageView blendMode="OVERLAY" fitHeight="44.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/Icons/send-message.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+   </children>
+</AnchorPane>

@@ -1,0 +1,115 @@
+/* styles.css */
+
+.profile-container {
+    text-align: center;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+/* styles.css */
+
+/* styles.css */
+
+
+
+
+
+
+
+
+
+.hbox-container {
+    -fx-background-color: #9c7e7e; /* Set your desired background color */
+    -fx-padding: 20px; /* Add padding as needed */
+    -fx-border-color: #e3bcbc;
+    -fx-border-width: 2px; /* Set the border width as needed */
+}
+
+.oval-container {
+    -fx-background-color: #9c7e7e; /* Set your desired background color */
+    -fx-padding: 20px; /* Add padding as needed */
+    -fx-border-color: #e3bcbc;
+    -fx-border-width: 2px; /* Set the border width as needed */
+}
+
+.circle-shape {
+    -fx-background-color: #9c7e7e; /* Set the same background color as the container */
+    -fx-padding: 20px; /* Match the container padding */
+    -fx-shape: "M0,0 H1 A1,1 0 0,1 0,0 Z"; /* Path to create a half-circle shape */
+}
+
+
+.profile-picture {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.user-name {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.user-role {
+    font-size: 14px;
+    color: #888;
+    margin-bottom: 20px;
+}
+
+.action-button {
+    /* Standard color property with vendor prefixes */
+    -fx-text-fill: black;
+    -webkit-text-fill-color: black;
+    -moz-text-fill-color: black;
+    color: black;
+
+    /* Standard background-color property with vendor prefixes */
+    -fx-background-color: #ffc0cb;
+    -webkit-background-color: #ffc0cb;
+    -moz-background-color: #ffc0cb;
+    background-color: #ffc0cb;
+
+    /* Standard font-size property with vendor prefixes */
+    -fx-font-size: 14px;
+    -webkit-font-size: 14px;
+    -moz-font-size: 14px;
+    font-size: 14px;
+
+
+    /* Standard padding property with vendor prefixes */
+    -fx-padding: 8px 15px;
+    -webkit-padding: 8px 15px;
+    -moz-padding: 8px 15px;
+    padding: 8px 15px;
+
+
+    /* Standard cursor property with vendor prefixes */
+    -fx-cursor: hand;
+    -webkit-cursor: pointer;
+    -moz-cursor: pointer;
+    cursor: pointer;
+}
+
+.action-button:hover {
+    /* Standard color property on hover with vendor prefixes */
+    -fx-text-fill: black;
+    -webkit-text-fill-color: black;
+    -moz-text-fill-color: black;
+    color: black;
+
+    /* Standard background-color property on hover with vendor prefixes */
+    -fx-background-color: #ffc0cb;
+    -webkit-background-color: #ffc0cb;
+    -moz-background-color: #ffc0cb;
+    background-color: #ffc0cb;
+
+    /* Standard cursor property on hover with vendor prefixes */
+    -fx-cursor: hand;
+    -webkit-cursor: pointer;
+    -moz-cursor: pointer;
+    cursor: pointer;
+}

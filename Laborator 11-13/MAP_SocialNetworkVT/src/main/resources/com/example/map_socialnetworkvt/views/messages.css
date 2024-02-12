@@ -1,0 +1,25 @@
+.message-label {
+    -fx-padding: 10px;
+    -fx-background-radius: 10px;
+    -fx-background-color: #e0e0e0;
+    -fx-text-fill: #333;
+}
+.yourmessage-label {
+     -fx-padding: 10px;
+     -fx-background-radius: 10px;
+     -fx-background-color: #efcfe3;
+     -fx-text-fill: #333;
+ }
+.replyPopUp-label {
+    -fx-padding: 5px;
+    -fx-background-radius: 10px;
+    -fx-background-color: #ea9ab2;
+    -fx-text-fill: #333;
+}
+.replyMessage-label {
+    -fx-padding: 6px;
+    -fx-background-radius: 10px;
+    -fx-background-color: #ff4d6d;
+    -fx-text-fill: #333;
+}
+

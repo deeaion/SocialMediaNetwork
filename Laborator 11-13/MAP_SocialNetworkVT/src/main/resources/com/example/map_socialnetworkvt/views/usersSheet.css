@@ -1,0 +1,78 @@
+.hbox-style{
+    -fx-background-color:  #FAE5E0;
+    -fx-border-width:  5;
+    -fx-border-color:  #FFFFFF;
+}
+#HBoxUserInfo:hover {
+    -fx-background-color: #FFDAB9; /* Change the background color on hover */
+}
+
+.hbox-styleFriends{
+    -fx-background-color:  #D8A7B1;
+    -fx-border-width:  5;
+    -fx-border-color:  #FFFFFF;
+}
+.buttonAddUnfriend {
+    /* Standard color property with vendor prefixes */
+    -fx-text-fill: black;
+    -webkit-text-fill-color: black;
+    -moz-text-fill-color: black;
+    color: black;
+
+    /* Standard background-color property with vendor prefixes */
+    -fx-background-color: #9c7e7e;
+    -webkit-background-color: #9c7e7e;
+    -moz-background-color: #9c7e7e;
+    -fx-border-color: #ffffff;
+    /*-fx-border-width: 2;*/
+    background-color: #9c7e7e;
+
+    /* Standard font-size property with vendor prefixes */
+    -fx-font-size: 8px;
+    -webkit-font-size: 8px;
+    -moz-font-size: 8px;
+
+    /* Standard font-family property with vendor prefixes */
+    -fx-font-family: "Caviar Dreams";
+    -webkit-font-family: "Caviar Dreams";
+    -moz-font-family: "Caviar Dreams";
+    font-family: "Caviar Dreams";
+
+    /* Standard padding property with vendor prefixes */
+    -fx-padding: 5px 15px;
+    -webkit-padding: 5px 15px;
+    -moz-padding: 5px 15px;
+    padding: 5px 15px;
+
+    /* Standard border-radius property with vendor prefixes */
+    -fx-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+
+    /* Standard cursor property with vendor prefixes */
+    -fx-cursor: hand;
+    -webkit-cursor: pointer;
+    -moz-cursor: pointer;
+    cursor: pointer;
+}
+
+.buttonAddUnfriend:hover {
+    /* Standard color property on hover with vendor prefixes */
+    -fx-text-fill: black;
+    -webkit-text-fill-color: black;
+    -moz-text-fill-color: black;
+    color: black;
+
+    /* Standard background-color property on hover with vendor prefixes */
+    -fx-background-color: #9c7e7e;
+    -webkit-background-color: #9c7e7e;
+    -moz-background-color: #9c7e7e;
+    background-color: #9c7e7e;
+
+    /* Standard cursor property on hover with vendor prefixes */
+    -fx-cursor: hand;
+    -webkit-cursor: pointer;
+    -moz-cursor: pointer;
+    cursor: pointer;
+}

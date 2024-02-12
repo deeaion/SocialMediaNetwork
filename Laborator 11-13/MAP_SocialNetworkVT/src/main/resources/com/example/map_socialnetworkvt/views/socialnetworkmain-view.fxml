@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.SubScene?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane opacity="0.75" prefHeight="700.0" prefWidth="900.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.map_socialnetworkvt.Controller.SocialNetworkMainController">
+   <children>
+      <BorderPane fx:id="borderPane" prefHeight="709.0" prefWidth="901.0">
+         <left>
+            <AnchorPane prefHeight="671.0" prefWidth="194.0" style="-fx-background-color: #fcdadb;" BorderPane.alignment="CENTER">
+               <children>
+                  <VBox alignment="TOP_CENTER" layoutY="217.0" prefHeight="342.0" prefWidth="194.0" spacing="10.0">
+                     <children>
+                        <Button fx:id="btnProfile" mnemonicParsing="false" onAction="#handlePanelClicks" prefHeight="50.0" prefWidth="191.0" text="PROFILE" textFill="#945050" wrapText="true">
+                           <font>
+                              <Font name="PMingLiU-ExtB" size="26.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="btnUsers" mnemonicParsing="false" onAction="#handlePanelClicks" prefHeight="50.0" prefWidth="191.0" text="USERS" textFill="#945050" wrapText="true">
+                           <font>
+                              <Font name="PMingLiU-ExtB" size="26.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="btnMessages" mnemonicParsing="false" onAction="#handlePanelClicks" prefHeight="50.0" prefWidth="191.0" text="MESSAGES" textFill="#945050" wrapText="true">
+                           <font>
+                              <Font name="PMingLiU-ExtB" size="26.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="btnFriends" mnemonicParsing="false" onAction="#handlePanelClicks" prefHeight="50.0" prefWidth="191.0" text="FRIENDS" textFill="#945050" wrapText="true">
+                           <font>
+                              <Font name="PMingLiU-ExtB" size="26.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="btnNotifications" mnemonicParsing="false" onAction="#handlePanelClicks" prefHeight="50.0" prefWidth="191.0" text="NOTIFICATIONS" textFill="#945050" wrapText="true">
+                           <font>
+                              <Font name="PMingLiU-ExtB" size="26.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </VBox>
+               </children>
+            </AnchorPane>
+         </left>
+         <top>
+            <AnchorPane prefHeight="44.0" prefWidth="900.0" style="-fx-background-color: #fdb2c7;" BorderPane.alignment="CENTER">
+               <children>
+                  <Button fx:id="btnExit" layoutX="847.0" layoutY="10.0" mnemonicParsing="false" onAction="#handleClose" prefHeight="25.0" prefWidth="39.0" text="X" />
+               </children>
+            </AnchorPane>
+         </top>
+         <center>
+            <SubScene fx:id="middleScene" height="665.0" width="713.0" BorderPane.alignment="CENTER">
+              <root>
+                <Region />
+              </root>
+            </SubScene>
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>

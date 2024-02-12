@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="665.0" prefWidth="713.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.map_socialnetworkvt.Controller.MessagingController">
+   <children>
+      <SplitPane dividerPositions="0.36632270168855535" layoutY="-8.0" prefHeight="677.0" prefWidth="713.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="665.0" prefWidth="459.0" style="-fx-background-color: #FAE8E0;">
+               <children>
+                  <HBox alignment="CENTER_RIGHT" layoutY="6.0" prefHeight="60.0" prefWidth="257.0" style="-fx-background-color: #D8A7B1;">
+                     <children>
+                        <Label prefHeight="51.0" prefWidth="207.0" text="ADD MESSAGE" textFill="#b6e2d3">
+                           <font>
+                              <Font name="Another Typewriter" size="28.0" />
+                           </font>
+                           <effect>
+                              <DropShadow blurType="TWO_PASS_BOX" radius="17.3" width="50.2" />
+                           </effect>
+                        </Label>
+                        <ImageView fx:id="btnComposeMessage" blendMode="OVERLAY" fitHeight="57.0" fitWidth="54.0" onMouseClicked="#handleComposeMessage" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/Icons/plus.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </HBox>
+                  <ScrollPane fx:id="ScrollPane" layoutY="66.0">
+                     <content>
+                        <VBox fx:id="VboxLastMessages" prefHeight="600.0" prefWidth="257.0">
+                           <children>
+                              <HBox alignment="CENTER_LEFT" prefHeight="69.0" prefWidth="247.0" style="-fx-background-color: #ffe3e0; -fx-border-width: 6; -fx-border-color: #ffffff;">
+                                 <children>
+                                    <ImageView fitHeight="56.0" fitWidth="55.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../images/userPfps/foxy.jpg" />
+                                       </image>
+                                    </ImageView>
+                                    <VBox prefHeight="57.0" prefWidth="189.0">
+                                       <children>
+                                          <Label prefHeight="35.0" prefWidth="180.0" text="\@username" />
+                                          <Label prefHeight="35.0" prefWidth="180.0" text="Last Message" />
+                                       </children>
+                                    </VBox>
+                                 </children>
+                              </HBox>
+                           </children>
+                        </VBox>
+                     </content>
+                  </ScrollPane>
+               </children>
+            </AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="665.0" prefWidth="100.0" style="-fx-background-color: #ffc0cb;">
+               <children>
+                  <ScrollPane fx:id="ScrollPaneMessages" layoutY="67.0" prefHeight="539.0" prefWidth="447.0">
+                    <content>
+                        <VBox fx:id="VBOXMessages" alignment="BOTTOM_LEFT" prefHeight="536.0" prefWidth="441.0">
+                           <children>
+                              <Label alignment="CENTER" prefHeight="26.0" prefWidth="441.0" text="----Messages from date-----">
+                                 <font>
+                                    <Font size="17.0" />
+                                 </font>
+                              </Label>
+                              <HBox fx:id="hboxothersend" alignment="CENTER_LEFT" nodeOrientation="LEFT_TO_RIGHT" prefHeight="43.0" prefWidth="441.0" styleClass="hbox-styleFriends">
+                                 <children>
+                                    <VBox prefHeight="97.0" prefWidth="370.0">
+                                       <children>
+                                          <Label prefHeight="33.0" prefWidth="205.0" text="username">
+                                             <font>
+                                                <Font name="Arial Rounded MT Bold" size="16.0" />
+                                             </font>
+                                          </Label>
+                                          <Label prefHeight="51.0" prefWidth="337.0" styleClass="message-label" stylesheets="@messages.css" text="your message">
+                                             <font>
+                                                <Font size="10.0" />
+                                             </font></Label>
+                                       </children>
+                                    </VBox>
+                                    <ImageView fx:id="replyImage" fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../images/Icons/reply.png" />
+                                       </image>
+                                    </ImageView>
+                                    <Label prefHeight="39.0" prefWidth="110.0" text="12:20">
+                                       <font>
+                                          <Font size="20.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </HBox>
+                              <HBox fx:id="hboxyorumessage" alignment="CENTER" prefHeight="72.0" prefWidth="386.0" styleClass="hbox-styleFriends">
+                                 <children>
+                                    <Label alignment="CENTER_RIGHT" prefHeight="45.0" prefWidth="51.0" text="12:20">
+                                       <font>
+                                          <Font size="20.0" />
+                                       </font>
+                                    </Label>
+                                    <VBox alignment="TOP_RIGHT" prefHeight="42.0" prefWidth="370.0">
+                                       <children>
+                                          <Label alignment="CENTER_RIGHT" prefHeight="33.0" prefWidth="171.0" text="You">
+                                             <font>
+                                                <Font name="Arial Rounded MT Bold" size="16.0" />
+                                             </font>
+                                          </Label>
+                                          <Label prefHeight="51.0" prefWidth="337.0" styleClass="yourmessage-label" stylesheets="@messages.css" text="your message" />
+                                       </children>
+                                    </VBox>
+                                 </children>
+                              </HBox>
+                              <HBox fx:id="replyother" alignment="CENTER" prefHeight="72.0" prefWidth="386.0" styleClass="hbox-styleFriends">
+                                 <children>
+                                    <VBox prefHeight="67.0" prefWidth="339.0">
+                                       <children>
+                                          <HBox prefHeight="100.0" prefWidth="200.0">
+                                             <children>
+                                                <Label prefHeight="29.0" prefWidth="173.0" text="username replied to:">
+                                                   <font>
+                                                      <Font name="Arial Rounded MT Bold" size="12.0" />
+                                                   </font>
+                                                </Label>
+                                                <Label prefHeight="29.0" prefWidth="258.0" styleClass="replyMessage-label" stylesheets="@messages.css" text="your message" />
+                                             </children>
+                                          </HBox>
+                                          <Label prefHeight="20.0" prefWidth="339.0" styleClass="message-label" stylesheets="@messages.css" text="the reply" />
+                                       </children>
+                                    </VBox>
+                                    <ImageView fx:id="replyImage1" fitHeight="21.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../images/Icons/reply.png" />
+                                       </image>
+                                    </ImageView>
+                                    <Label prefHeight="26.0" prefWidth="66.0" text="12:20">
+                                       <font>
+                                          <Font size="20.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </HBox>
+                              <HBox fx:id="yourreply" alignment="CENTER_RIGHT" prefHeight="45.0" prefWidth="441.0" styleClass="hbox-styleFriends">
+                                 <children>
+                                    <Label prefHeight="17.0" prefWidth="56.0" text="12:20">
+                                       <font>
+                                          <Font size="20.0" />
+                                       </font>
+                                    </Label>
+                                    <VBox alignment="TOP_RIGHT" prefHeight="97.0" prefWidth="370.0">
+                                       <children>
+                                          <HBox alignment="TOP_RIGHT" prefHeight="100.0" prefWidth="200.0">
+                                             <children>
+                                                <Label alignment="CENTER" prefHeight="33.0" prefWidth="120.0" text="you replied to:">
+                                                   <font>
+                                                      <Font name="Arial Rounded MT Bold" size="12.0" />
+                                                   </font>
+                                                </Label>
+                                                <Label alignment="TOP_RIGHT" contentDisplay="RIGHT" minHeight="-Infinity" minWidth="-Infinity" prefHeight="27.0" prefWidth="265.0" styleClass="replyPopUp-label" stylesheets="@messages.css" text="the message">
+                                                   <font>
+                                                      <Font size="11.0" />
+                                                   </font>
+                                                </Label>
+                                             </children>
+                                          </HBox>
+                                          <Label prefHeight="37.0" prefWidth="387.0" styleClass="yourmessage-label" stylesheets="@messages.css" text="the reply" />
+                                       </children>
+                                    </VBox>
+                                 </children>
+                              </HBox>
+                           </children>
+                        </VBox>
+                    </content>
+                  </ScrollPane>
+                  <HBox alignment="BOTTOM_CENTER" layoutX="-1.0" prefHeight="69.0" prefWidth="462.0" style="-fx-background-color: #D8A7B1;">
+                     <children>
+                        <ImageView fx:id="loadedUserPfp" fitHeight="59.0" fitWidth="66.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/userPfps/foxy.jpg" />
+                           </image>
+                        </ImageView>
+                        <VBox prefHeight="82.0" prefWidth="389.0">
+                           <children>
+                              <Label fx:id="loadedUserName" prefHeight="41.0" prefWidth="390.0" text="Rizz TheRizzer">
+                                 <font>
+                                    <Font name="Brand" size="24.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="loadedUserUserName" prefHeight="24.0" prefWidth="411.0" text="\@username" />
+                           </children>
+                        </VBox>
+                     </children>
+                  </HBox>
+                  <TextArea fx:id="inputMessage" layoutX="-3.0" layoutY="609.0" prefHeight="60.0" prefWidth="401.0" promptText="Send text" />
+                  <Button fx:id="btnSend" defaultButton="true" layoutX="394.0" layoutY="610.0" mnemonicParsing="false" onAction="#handleSend" prefHeight="60.0" prefWidth="43.0" style="-fx-background-color: #EF7C8E;">
+                     <graphic>
+                        <ImageView blendMode="OVERLAY" fitHeight="44.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/Icons/send-message.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+   </children>
+   <stylesheets>
+      <URL value="@usersSheet.css" />
+      <URL value="@profileStyleSheet.css" />
+   </stylesheets>
+</AnchorPane>

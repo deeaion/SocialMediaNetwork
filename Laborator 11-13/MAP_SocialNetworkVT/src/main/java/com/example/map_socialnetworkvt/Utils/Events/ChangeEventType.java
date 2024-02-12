@@ -1,0 +1,6 @@
+package com.example.map_socialnetworkvt.Utils.Events;
+
+public enum ChangeEventType {
+    ADD,UPDATE,DELETE,ADDFRIEND,UPDATEFRIEND,DELETEFRIEND,ADDMESSAGE,ADDREPLY
+    ,ACCEPTREQUEST,REJECTREQUEST,PENDINGREQUEST;
+}

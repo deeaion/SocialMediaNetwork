@@ -1,0 +1,83 @@
+.button {
+    /* Standard color property */
+    -fx-text-fill: white;
+
+    /* Vendor prefixes for color */
+    -webkit-text-fill-color: white;
+    -moz-text-fill-color: white;
+    color: white;
+
+    /* Standard background-color property */
+    -fx-background-color: #EF7C8E;
+
+    /* Vendor prefixes for background-color */
+    -webkit-background-color: #EF7C8E;
+    -moz-background-color: #EF7C8E;
+    background-color: #EF7C8E;
+
+    /* Standard font-size property */
+    -fx-font-size: 14px;
+
+    /* Vendor prefixes for font-size */
+    -webkit-font-size: 14px;
+    -moz-font-size: 14px;
+    font-size: 14px;
+
+    /* Standard font-family property */
+    -fx-font-family: "Arial", sans-serif;
+
+    /* Vendor prefixes for font-family */
+    -webkit-font-family: "Arial", sans-serif;
+    -moz-font-family: "Arial", sans-serif;
+    font-family: "Arial", sans-serif;
+
+    /* Standard padding property */
+    -fx-padding: 8px 15px;
+
+    /* Vendor prefixes for padding */
+    -webkit-padding: 8px 15px;
+    -moz-padding: 8px 15px;
+    padding: 8px 15px;
+
+    /* Standard border-radius property */
+    -fx-border-radius: 5px;
+
+    /* Vendor prefixes for border-radius */
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+
+    /* Standard cursor property */
+    -fx-cursor: hand;
+
+    /* Vendor prefixes for cursor */
+    -webkit-cursor: pointer;
+    -moz-cursor: pointer;
+    cursor: pointer;
+}
+
+.button:hover {
+    /* Standard color property on hover */
+    -fx-text-fill: white;
+
+    /* Vendor prefixes for color on hover */
+    -webkit-text-fill-color: white;
+    -moz-text-fill-color: white;
+    color: white;
+
+    /* Standard background-color property on hover */
+    -fx-background-color: #EF7C8E;
+
+    /* Vendor prefixes for background-color on hover */
+    -webkit-background-color: #EF7C8E;
+    -moz-background-color: #EF7C8E;
+    background-color: #EF7C8E;
+
+    /* Standard cursor property on hover */
+    -fx-cursor: hand;
+
+    /* Vendor prefixes for cursor on hover */
+    -webkit-cursor: pointer;
+    -moz-cursor: pointer;
+    cursor: pointer;
+}
