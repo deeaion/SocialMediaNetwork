@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="700.0" prefWidth="900.0" style="-fx-background-color: #fbebdc;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.map_toysocngradlefx2.Controller.SignUpController">
+   <children>
+      <Label layoutX="204.0" layoutY="74.0" text="CREATE ACCOUNT">
+         <font>
+            <Font name="High Tower Text" size="50.0" />
+         </font>
+      </Label>
+      <VBox alignment="CENTER_LEFT" layoutX="216.0" layoutY="174.0" prefHeight="321.0" prefWidth="469.0" style="-fx-background-color: #f0af91;">
+         <children>
+            <Label alignment="TOP_LEFT" text="FIRST NAME">
+               <font>
+                  <Font name="Gadugi" size="19.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtFName" alignment="CENTER_RIGHT" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" nodeOrientation="LEFT_TO_RIGHT" prefHeight="47.0" prefWidth="469.0" style="-fx-background-color: #fecdbc;" VBox.vgrow="SOMETIMES" />
+            <Label text="LAST NAME">
+               <font>
+                  <Font name="Gadugi" size="19.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtLName" prefHeight="36.0" prefWidth="385.0" style="-fx-background-color: #fecdbc;" />
+            <Label text="USERNAME">
+               <font>
+                  <Font name="Gadugi" size="19.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtUsername" prefHeight="36.0" prefWidth="385.0" style="-fx-background-color: #fecdbc;" />
+            <Label text="PASSWORD">
+               <font>
+                  <Font name="Gadugi" size="19.0" />
+               </font>
+            </Label>
+            <PasswordField fx:id="txtPas" prefHeight="39.0" prefWidth="469.0" style="-fx-background-color: #fecdbc;" />
+            <Label text="CONFIRM PASSWORD">
+               <font>
+                  <Font name="Gadugi" size="19.0" />
+               </font>
+            </Label>
+            <PasswordField fx:id="txtConfPas" prefHeight="39.0" prefWidth="469.0" style="-fx-background-color: #fecdbc;" />
+         </children>
+      </VBox>
+      <Button fx:id="btnConfirm" defaultButton="true" layoutX="233.0" layoutY="528.0" mnemonicParsing="false" onAction="#handleSave" prefHeight="59.0" prefWidth="172.0" style="-fx-background-color: #f0af91#fecdbc;" text="CONFIRM" />
+      <Button fx:id="btnCancel" cancelButton="true" layoutX="466.0" layoutY="528.0" mnemonicParsing="false" onAction="#handleCancel" prefHeight="59.0" prefWidth="172.0" style="-fx-background-color: #fecdbc;" text="CANCEL" />
+      <Label layoutX="257.0" layoutY="608.0" prefHeight="78.0" prefWidth="367.0" text="MESSAGE FOR  USER" visible="false" />
+   </children>
+</AnchorPane>

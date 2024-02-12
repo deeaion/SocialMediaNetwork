@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="700.0" prefWidth="900.0" style="-fx-background-color: #fceeed;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.map_toysocngradlefx2.Controller.LogInController">
+   <children>
+      <ImageView fitHeight="708.0" fitWidth="1026.0" layoutX="-479.0" opacity="0.87" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/log-in_default.jpg" />
+         </image>
+         <effect>
+            <ColorAdjust brightness="0.05" contrast="0.13" hue="-0.17" saturation="-0.16" />
+         </effect>
+      </ImageView>
+      <TextField fx:id="txtUsername" layoutX="569.0" layoutY="288.0" prefHeight="34.0" prefWidth="284.0" promptText="enter username" />
+      <TextField fx:id="txtPassword" layoutX="569.0" layoutY="361.0" prefHeight="34.0" prefWidth="284.0" />
+      <Button fx:id="btnLogIn" defaultButton="true" layoutX="569.0" layoutY="418.0" mnemonicParsing="false" onAction="#handleLogIn" prefHeight="49.0" prefWidth="132.0" text="LOG IN" />
+      <Label layoutX="569.0" layoutY="526.0" prefHeight="22.0" prefWidth="167.0" text="Have you not registered yet?" />
+      <Button fx:id="btnSignUp" layoutX="616.0" layoutY="554.0" mnemonicParsing="false" onAction="#handleSignUp" text="Create an Account" />
+      <Label alignment="CENTER" layoutX="619.0" layoutY="176.0" prefHeight="49.0" prefWidth="167.0" text="WELCOME !">
+         <font>
+            <Font name="Niagara Engraved" size="52.0" />
+         </font>
+      </Label>
+      <Label layoutX="569.0" layoutY="258.0" prefHeight="22.0" prefWidth="94.0" text="USERNAME">
+         <font>
+            <Font name="MingLiU_HKSCS-ExtB" size="19.0" />
+         </font>
+      </Label>
+      <Label layoutX="569.0" layoutY="328.0" prefHeight="22.0" prefWidth="94.0" text="PASSWORD">
+         <font>
+            <Font name="MingLiU_HKSCS-ExtB" size="19.0" />
+         </font>
+      </Label>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#1f93ff00" height="73.0" layoutX="586.0" layoutY="168.0" strokeType="INSIDE" width="250.0">
+         <stroke>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="#964747" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </stroke>
+      </Rectangle>
+      <Button fx:id="btnCancel" cancelButton="true" layoutX="715.0" layoutY="418.0" mnemonicParsing="false" onAction="#handleCancel" prefHeight="49.0" prefWidth="139.0" text="CANCEL" />
+   </children>
+</AnchorPane>
